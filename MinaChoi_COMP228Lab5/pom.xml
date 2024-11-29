@@ -5,9 +5,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>MinaChoi_COMP228Lab4</artifactId>
+  <artifactId>MinaChoi_COMP228Lab5</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>MinaChoi_COMP228Lab4</name>
+  <name>MinaChoi_COMP228Lab5</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -103,6 +103,11 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.oracle.database.jdbc</groupId>
+      <artifactId>ojdbc8</artifactId>
+      <version>19.8.0.0</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -125,7 +130,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>org.example.minachoi_comp228lab4/org.example.minachoi_comp228lab4.HelloApplication</mainClass>
+              <mainClass>org.example.minachoi_comp228lab5/org.example.minachoi_comp228lab5.HelloApplication</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>

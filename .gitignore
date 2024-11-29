@@ -1,0 +1,14 @@
+*.class
+
+.idea/
+
+**/target/
+
+/build/
+
+*.iml
+.idea/
+
+*.log
+
+application.properties

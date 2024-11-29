@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.minachoi_comp228lab5.controller.PlayerController">
+    <Label text="Player Management" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <GridPane hgap="10" vgap="10">
+        <!-- First Name -->
+        <Label text="First Name:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="firstNameField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+        <!-- Last Name -->
+        <Label text="Last Name:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="lastNameField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+        <!-- Address -->
+        <Label text="Address:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="addressField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <!-- Postal Code -->
+        <Label text="Postal Code:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <TextField fx:id="postalCodeField" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+        <!-- Province -->
+        <Label text="Province:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+        <TextField fx:id="provinceField" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+        <!-- Phone Number -->
+        <Label text="Phone Number:" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+        <TextField fx:id="phoneNumberField" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+    </GridPane>
+    <HBox spacing="10">
+        <Button text="Add Player" onAction="#handleAddPlayer" />
+    </HBox>
+    <TableView fx:id="playerTable">
+        <columns>
+            <TableColumn text="ID" fx:id="playerIdColumn" />
+            <TableColumn text="First Name" fx:id="firstNameColumn" />
+            <TableColumn text="Last Name" fx:id="lastNameColumn" />
+            <TableColumn text="Address" fx:id="addressColumn" />
+            <TableColumn text="Postal Code" fx:id="postalCodeColumn" />
+            <TableColumn text="Province" fx:id="provinceColumn" />
+            <TableColumn text="Phone Number" fx:id="phoneNumberColumn" />
+        </columns>
+    </TableView>
+</VBox>

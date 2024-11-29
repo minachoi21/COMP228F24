@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox spacing="20" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.minachoi_comp228lab5.controller.PlayerGameController">
+    <!-- 게임 목록 -->
+    <VBox spacing="10">
+        <Label text="Games" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+        <TableView fx:id="gameTable">
+            <columns>
+                <TableColumn text="Game ID" fx:id="gameIdColumn" />
+                <TableColumn text="Game Title" fx:id="gameTitleColumn" />
+            </columns>
+        </TableView>
+    </VBox>
+
+    <!-- 플레이어 기록 관리 -->
+    <VBox spacing="10">
+        <Label text="Player Records" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+        <TableView fx:id="playerGameTable">
+            <columns>
+                <TableColumn text="Player Game ID" fx:id="playerGameIdColumn" />
+                <TableColumn text="Player ID" fx:id="playerIdColumn" />
+                <TableColumn text="Playing Date" fx:id="playingDateColumn" />
+                <TableColumn text="Score" fx:id="scoreColumn" />
+            </columns>
+        </TableView>
+
+        <HBox spacing="10">
+            <Label text="Player ID:" />
+            <TextField fx:id="playerIdField" />
+            <Label text="Score:" />
+            <TextField fx:id="scoreField" />
+            <Button text="Add Record" onAction="#handleAddPlayerGameRecord" />
+        </HBox>
+    </VBox>
+</HBox>
